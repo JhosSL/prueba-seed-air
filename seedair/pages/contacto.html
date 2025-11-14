@@ -1,1 +1,75 @@
-
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contacto - SeedAir</title>
+  <link rel="stylesheet" href="../css/estilos.css">
+  <link rel="stylesheet" href="../css/formularios.css">
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/footer.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="../index.html" class="logo">SeedAir</a>
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="campanias.html">Campañas</a></li>
+        <li><a href="impacto.html">Impacto</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="recursos.html">Recursos</a></li>
+        <li><a href="equipo.html">Equipo</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="contenedor-formulario">
+      <h2>Contáctanos</h2>
+      <form id="formularioContacto" novalidate>
+        <div class="grupo-formulario">
+          <label>Nombre completo <span class="obligatorio">*</span></label>
+          <input type="text" id="nombre-contacto" required>
+          <span class="mensaje-error" id="nombre-contacto-error"></span>
+        </div>
+        <div class="grupo-formulario">
+          <label>Correo electrónico <span class="obligatorio">*</span></label>
+          <input type="email" id="correo-contacto" required>
+          <span class="mensaje-error" id="correo-contacto-error"></span>
+        </div>
+        <div class="grupo-formulario">
+          <label>Teléfono <span class="obligatorio">*</span></label>
+          <input type="tel" id="telefono-contacto" required>
+          <span class="mensaje-error" id="telefono-contacto-error"></span>
+        </div>
+        <div class="grupo-formulario">
+          <label>Asunto <span class="obligatorio">*</span></label>
+          <select id="asunto" required>
+            <option value="">Selecciona un asunto</option>
+            <option value="informacion">Información general</option>
+            <option value="colaboracion">Colaboración</option>
+            <option value="voluntariado">Voluntariado</option>
+            <option value="donacion">Donación</option>
+            <option value="otro">Otro</option>
+          </select>
+          <span class="mensaje-error" id="asunto-error"></span>
+        </div>
+        <div class="grupo-formulario">
+          <label>Mensaje <span class="obligatorio">*</span></label>
+          <textarea id="mensaje" required></textarea>
+          <span class="mensaje-error" id="mensaje-error"></span>
+        </div>
+        <button type="submit" class="boton-enviar">Enviar Mensaje</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-content">
+      <p>© 2024 SeedAir - Green Allies</p>
+    </div>
+  </footer>
+  <script src="../js/formularios.js"></script>
+</body>
+</html>
