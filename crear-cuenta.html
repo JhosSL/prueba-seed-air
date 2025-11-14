@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Crear Cuenta - SeedAir</title>
+  <link rel="stylesheet" href="../css/estilos.css">
+  <link rel="stylesheet" href="../css/formularios.css">
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/footer.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="../index.html" class="logo">SeedAir</a>
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="campanias.html">Campañas</a></li>
+        <li><a href="impacto.html">Impacto</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="recursos.html">Recursos</a></li>
+        <li><a href="equipo.html">Equipo</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="contenedor-formulario">
+      <h2>Crear Cuenta</h2>
+      <form id="formularioCuenta" novalidate>
+        <div class="grupo-formulario">
+          <label for="nombre">Nombre <span class="obligatorio">*</span></label>
+          <input type="text" id="nombre" required>
+          <span class="mensaje-error" id="nombre-error"></span>
+          <span class="mensaje-correcto" id="nombre-correcto">✓ Correcto</span>
+        </div>
+        <div class="grupo-formulario">
+          <label for="apellido">Apellido <span class="obligatorio">*</span></label>
+          <input type="text" id="apellido" required>
+          <span class="mensaje-error" id="apellido-error"></span>
+          <span class="mensaje-correcto" id="apellido-correcto">✓ Correcto</span>
+        </div>
+        <div class="grupo-formulario">
+          <label for="correo">Correo electrónico <span class="obligatorio">*</span></label>
+          <input type="email" id="correo" required>
+          <span class="mensaje-error" id="correo-error"></span>
+          <span class="mensaje-correcto" id="correo-correcto">✓ Correcto</span>
+        </div>
+        <div class="grupo-formulario">
+          <label for="telefono">Teléfono <span class="obligatorio">*</span></label>
+          <input type="tel" id="telefono" required>
+          <span class="mensaje-error" id="telefono-error"></span>
+          <span class="mensaje-correcto" id="telefono-correcto">✓ Correcto</span>
+        </div>
+        <div class="grupo-formulario">
+          <label for="contrasena">Contraseña <span class="obligatorio">*</span></label>
+          <input type="password" id="contrasena" required>
+          <span class="mensaje-error" id="contrasena-error"></span>
+          <span class="mensaje-correcto" id="contrasena-correcto">✓ Contraseña segura</span>
+        </div>
+        <div class="grupo-formulario">
+          <label for="confirmar-contrasena">Confirmar contraseña <span class="obligatorio">*</span></label>
+          <input type="password" id="confirmar-contrasena" required>
+          <span class="mensaje-error" id="confirmar-contrasena-error"></span>
+          <span class="mensaje-correcto" id="confirmar-contrasena-correcto">✓ Coinciden</span>
+        </div>
+        <button type="submit" class="boton-enviar">Crear Cuenta</button>
+      </form>
+      <p style="text-align:center;">¿Ya tienes cuenta? <a href="iniciar-sesion.html">Inicia sesión</a></p>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-content">
+      <p>© 2024 SeedAir - Green Allies</p>
+    </div>
+  </footer>
+  <script src="../js/validaciones.js"></script>
+  <script src="../js/formularios.js"></script>
+</body>
+</html>

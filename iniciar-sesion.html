@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Iniciar Sesión - SeedAir</title>
+  <link rel="stylesheet" href="../css/estilos.css">
+  <link rel="stylesheet" href="../css/formularios.css">
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/footer.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="../index.html" class="logo">SeedAir</a>
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="campanias.html">Campañas</a></li>
+        <li><a href="impacto.html">Impacto</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="recursos.html">Recursos</a></li>
+        <li><a href="equipo.html">Equipo</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="contenedor-formulario">
+      <h2>Iniciar Sesión</h2>
+      <form id="formularioSesion" novalidate>
+        <div class="grupo-formulario">
+          <label>Correo electrónico <span class="obligatorio">*</span></label>
+          <input type="email" id="correo-sesion" required>
+          <span class="mensaje-error" id="correo-sesion-error"></span>
+        </div>
+        <div class="grupo-formulario">
+          <label>Contraseña <span class="obligatorio">*</span></label>
+          <input type="password" id="contrasena-sesion" required>
+          <span class="mensaje-error" id="contrasena-sesion-error"></span>
+        </div>
+        <button type="submit" class="boton-enviar">Iniciar Sesión</button>
+      </form>
+      <p style="text-align: center;">¿No tienes cuenta? <a href="crear-cuenta.html">Regístrate aquí</a></p>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-content">
+      <p>© 2024 SeedAir - Green Allies</p>
+    </div>
+  </footer>
+  <script src="../js/formularios.js"></script>
+</body>
+</html>
